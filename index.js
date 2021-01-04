@@ -53,3 +53,16 @@ function countUniqueValues(arr){
     // };
     
     console.log(mergeTwoLists(l1, l2))
+
+    ////////////////////////////////////////////////////////////////////
+
+    function instructors(){
+        let instructor = {
+          firstName: "Kelly",
+          isInstructor: true,
+      favoriteNumbers: [1,2,3,4]
+        }
+        console.log(instructor.favoriteNumbers)
+      }
+      
+      instructors()
