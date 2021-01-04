@@ -36,3 +36,20 @@ function countUniqueValues(arr){
     
     countUniqueValues([1, 1, 2, 3, 4, 5, 6, 6, 7])
 
+    l1 = [1, 2, 4]
+    l2 = [1, 3, 4]
+    // sortedList = [1, 1, 2, 3, 4, 4]
+    
+    var mergeTwoLists = function(l1, l2) {
+        let lists = [...l1, ...l2]
+        let sorted = lists.sort ((a, b) => a - b) 
+        return sorted
+    };
+    
+    // var mergeTwoLists = function(l1, l2) {
+    //     let newList = l1.concat(l2)
+    //     let sorted = newList.sort ((a, b) => a - b) 
+    //     return sorted
+    // };
+    
+    console.log(mergeTwoLists(l1, l2))
